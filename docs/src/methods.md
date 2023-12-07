@@ -207,7 +207,7 @@ m(t, p) = @. p[1] * sin(p[2] * t) + p[3] * cos(p[4] * t)
 Notice that this is a function on the whole array of `t` and expects an array
 for the predicted `u` out. This choice of `m` is the assumption that our
 function is of the form `p1*sin(p2*t)+p3*cos(p4*t)`. We want to find the `p` to
-match our data. Let's start with the guess of every `p` being zero, that is
+match our data. Let's start with the guess of every `p` being one, that is
 `p=ones(4)`. Then we would fit this curve using:
 
 ```@example tutorial
